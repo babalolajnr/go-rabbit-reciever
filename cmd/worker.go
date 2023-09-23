@@ -25,7 +25,7 @@ func main() {
 
 	q, err := ch.QueueDeclare( // Declare a queue to consume from
 		"hello", // name
-		false,   // durable
+		true,   // durable
 		false,   // delete when unused
 		false,   // exclusive
 		false,   // no-wait
